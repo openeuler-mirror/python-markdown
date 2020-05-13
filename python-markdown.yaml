@@ -1,0 +1,4 @@
+version_control: pypi
+src_repo: markdown
+tag_prefix: "^v"
+seperator: "."
