@@ -47,7 +47,7 @@ find docs -type f -exec sed -i 's/\r//' {} \;
 
 %changelog
 * Tue Oct 27 2020 wangxiao <wangxiao65@huawei.com> - 3.3.1-2
-- drop python2 subpackage
+- remove python2 buildrequires
 
 * Thu Oct 15 2020 Zhipeng Xie <xiezhipeng1@huawei.com> - 3.3.1-1
 - upgrade to 3.3.1
