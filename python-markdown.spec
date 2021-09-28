@@ -2,7 +2,7 @@
 
 Name:           python-markdown
 Version:        3.3.1
-Release:        2
+Release:        3
 Summary:        A Python implementation of John Gruber’s Markdown
 License:        BSD
 URL:            https://pypi.org/project/Markdown/
@@ -20,6 +20,7 @@ though there are a few known issues.
 %package -n python3-markdown
 Summary:        Markdown implementation in Python
 Requires:       python3 >= 3.1
+%{?python_provide:%python_provide python3-markdown}
 
 %description -n python3-markdown
 This is a Python implementation of John Gruber’s Markdown.
@@ -46,6 +47,9 @@ find docs -type f -exec sed -i 's/\r//' {} \;
 %{_bindir}/markdown_py
 
 %changelog
+* Mon Sep 27 2021 lingsheng <lingsheng@huawei.com> - 3.3.1-3
+- Provide python-markdown
+
 * Tue Oct 27 2020 wangxiao <wangxiao65@huawei.com> - 3.3.1-2
 - remove python2 buildrequires
 
